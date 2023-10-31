@@ -1,0 +1,182 @@
+html, body {
+    height: 100%; /* Làm cho thẻ <html> và <body> lấp đầy màn hình */
+    margin: 0;
+    padding: 0;
+}
+
+/* Thay đổi màu nền và font-size cho #main-menu */
+#main-menu {
+    background-color: rgb(32, 93, 146); 
+    font-size: 14px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    margin: 0;
+    margin-left: -10px;
+    margin-right: -15px; 
+    margin-bottom: -10px; 
+}
+    
+
+/* Các liên kết trong #main-menu */
+#main-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 20px;
+    display: block;
+    position: relative;
+    padding-right: 70px;
+}
+
+
+/* Các submenu */
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: rgb(40, 93, 139);
+    padding: 15px 0px;
+    list-style: none;
+    width: 150px;
+    border: 1px solid #868789;
+    display: none;
+    top: 100%; /*Hiển thị submenu dưới menu cha */
+    left: 0;
+}
+
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color:  rgb(40, 93, 139);
+    padding: 15px 0px;
+    list-style: none;
+    width: 250px;
+    border: 1px solid #868789;
+    display: none;
+}
+
+#main-menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu a {
+    padding: 8px 15px;
+    border-bottom: 1px solid #8d8e90;
+}
+
+#main-menu ul.sub-menu li:hover > a {
+    border-bottom: 1px solid #b5b6b7;
+    background-color: rgb(31, 83, 129);
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 180px;
+    top: 95px;
+}
+
+/* Định dạng các mũi tên và border khi hover */
+#main-menu > li {
+    position: relative;
+}
+
+#main-menu > li > a::before {
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: #17eca2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu > li:hover > a::before {
+    width: 80%;
+}
+
+#main-menu > li.has-child::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: #c0bebe;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+h1 {
+    color: rgb(3, 3, 85);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 36px; 
+    font-weight: bold; 
+    line-height: 120px;  
+}
+
+footer {
+    background-color: rgb(64, 116, 176);
+    color: white;
+    text-align: left;
+    padding: 7px;
+    font-size: 13px;
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 1; 
+}
+
+footer .box-address p {
+    margin-left: 100px; 
+    }
+
+    .box-logo {
+        width: 10%;
+        float: left;
+        margin-right: 0px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .box-address {
+        width: 60%;
+        float: left;
+    }
+    
+    /*Định dạng cho các liên kết mạng xã hội*/
+    .list-social li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .list-social li:last-child {
+        margin-right: 0;
+    }
+    
+    .list-social li a {
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .list-social li a:hover {
+        color: #17eca2;
+    }
+    
+    .list-social li a i.fa-facebook {
+        font-size: 28px;
+    }
+    .list-social li a i.fa-envelope {
+        font-size: 28px;
+    }    

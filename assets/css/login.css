@@ -1,0 +1,92 @@
+
+h1 {
+  color: rgb(3, 3, 85);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 36px; 
+  font-weight: bold; 
+  line-height: 120px;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); 
+  }
+
+.login__container {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background: #f6f7f8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(48, 45, 45, 0.1);
+}
+
+.login__container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.login__container form {
+  display: flex;
+  flex-direction: column;
+}
+.login__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.login__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.login__container form button:hover {
+  background: #555;
+}
+.login__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.login__container form a:hover {
+  color: #555;
+}
+.login__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(41, 38, 224);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}

@@ -1,0 +1,52 @@
+body{
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(180, 187, 194); */
+    background-color: rgb(86, 136, 179);
+}
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header{
+    background-color: #1d868d;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#content{
+    min-height: 650px;
+    padding: 15px;
+    background-color: #eef8de;
+}
+
+#footer{
+    background-color: #14ab80;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text-center{
+    text-align:center;
+}
+
+a {
+    margin-bottom: 1px;
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none
+  }
+ 
+  a:hover {
+    color: rgb(210, 31, 31);
+    background-color: rgb(240, 240, 196); /* Đổi màu nền thành màu vàng */
+          }
+
+h3 {
+    color: rgb(18, 18, 150);
+    }

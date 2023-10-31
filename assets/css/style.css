@@ -1,0 +1,41 @@
+*{margin: 0px; padding: 0px;}
+a{text-decoration: none; color:#888;}
+ul li{list-style:none;}
+.clearfix::after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix{
+    clear: both;
+    display: block;
+}
+body{font-family: arial; font-size: 13px;}
+
+.wrapper_container{
+    width: 960px;
+    margin: 0px auto;
+}
+/*Phần style cho header*/
+#head{ background: #f4f4f4;}
+#logo, #main_menu{ float: left;}
+#logo img{height: 50px;
+margin-top: 5px;}
+#search{ float: right;}
+
+#main_menu>li{ float: left; border-right: 1px solid #E8E8E8;}
+#main_menu li{position: relative;}
+#main_menu>li a{display: block; padding: 20px; text-decoration: uppercase;}
+#main_menu li .sub_menu{position: absolute;}
+
+#search input{'text}{width:139px;
+margin-top: 14px;
+outline: none;
+background: #efefef;
+background: url(../Images/search.png) no-repeat;
+border: none;
+background-size:28px}
+
